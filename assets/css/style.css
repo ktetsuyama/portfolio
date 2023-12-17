@@ -151,7 +151,8 @@ p {
 }
   
 .card img {
-    width: 100%;
+    width: 100%;    
+    border-radius: 10px 0px 10px 50px;
 }
 
 .card:hover {
@@ -171,7 +172,7 @@ p {
 
 /* Keyframes for animations */
 
-/* @keyframes slide {
+@keyframes slide {
     0% {
         transform: translateX(800px);
         opacity: 0;
@@ -193,7 +194,7 @@ p {
         100% {
             opacity: 1;
           }
- } */
+ }
 
 
 /* Mobile Devices */
