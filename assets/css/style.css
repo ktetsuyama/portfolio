@@ -32,7 +32,7 @@ main {
     color: var(--light);
 }
 
-.burger-nav{
+.burger-nav {
     display: block;
     height: 40px;
     width: 100%;
@@ -41,29 +41,29 @@ main {
     cursor: pointer;
 }    
 
-.header nav{
+.header nav {
     width: 100%;
     padding: 0;
     margin: 0;
 }
 
-.header nav ul{
+.header nav ul {
    overflow: hidden;
    background: #505050;
    height: 0;
 }
 
-.header nav ul.open{
+.header nav ul.open {
     height: auto;
 }
-.header nav ul li{
+.header nav ul li {
     float: none;
-    text-align: left;
+    text-align: center;
     width: 100%;
     margin: 0;
 }
 
-.header nav ul li a{
+.header nav ul li a {
     color: #fff;
     padding: 10px;
     border-bottom: 1px solid #404040;
@@ -225,7 +225,7 @@ p {
           }
  }
 
-/* /* Tablets */
+/* Tablets */
 @media screen and (min-width: 768px){
     .col {
         flex: 0 0 33%;
@@ -235,19 +235,19 @@ p {
         display: none;
     } 
     
-    nav {
+    .header nav {
         padding-top: 15px;
         margin-right: 20px;
         float: right;
         font-family: Helvetica, Arial, sans-serif;
         font-size: 20px;
     }
-    
-    nav ul {
-        list-style-type: none;
+
+    .header nav ul {
+        overflow: visible;
     }
     
-    nav ul li {
+    .header nav ul li {
         display: inline-block;
         margin-left: 25px;
         padding: 4px;
