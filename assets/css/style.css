@@ -15,6 +15,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .header {
@@ -25,31 +32,49 @@ body {
     color: var(--light);
 }
 
+.burger-nav{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: url(../images/burger.png) no-repeat 98% center;
+    background-color: #404040;
+    cursor: pointer;
+}    
+
+.header nav{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header nav ul{
+   overflow: hidden;
+   background: #505050;
+   height: 0;
+}
+
+.header nav ul.open{
+    height: auto;
+}
+.header nav ul li{
+    float: none;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+.header nav ul li a{
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #404040;
+    display: block;
+    margin: 0;
+}
+
 h1 {
     display: flex;
     font-size: 48px;
     animation: slide 2s;
-}
-
-nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-    padding: 4px;
-    text-decoration: underline;
-    text-underline-offset: 7px;
-    text-shadow: 2px 2px 2px #0000008f;
 }
 
 .headshot {
@@ -73,17 +98,15 @@ p {
     line-height: 140%;
 }
 
-.titles {
-    width: 20%;
+.row{
     display:flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items:center;
-    float: left;
-    margin: 10px 0 0 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 0 4px 0 0;
-    border-color: var(--light);
+    width: 100%;
+}
+
+.col {
+    flex: 0 0 50%;
 }
 
 .title-words {
@@ -107,12 +130,11 @@ p {
     align-items: center;
 }
 
-.content {
-    width: 76%;
-    display: flex;
+.content{
+    display:flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-end;
-    float: right;
+    width: 100%;
 }
 
 .main-text { 
@@ -203,66 +225,56 @@ p {
           }
  }
 
-
-/* Mobile Devices */
-/* @media screen and (min-width: 480px) {
-    .burger-nav{
-        display: block;
-        height: 40px;
-        width: 100%;
-        background: url(../images/burger.png) no-repeat 98% center;
-        background-color: #404040;
-        cursor: pointer;
-    }    
-
-    .header nav{
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .header nav ul{
-       overflow: hidden;
-       background: #505050;
-       height: 0;
-    }
-
-    .header nav ul.open{
-        height: auto;
-    }
-    .header nav ul li{
-        float: none;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-    }
-
-    .header nav ul li a{
-        color: #fff;
-        padding: 10px;
-        border-bottom: 1px solid #404040;
-        display: block;
-        margin: 0;
-    }
-
-    .content{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .titles{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-    }
-
-  } */
-
-
 /* /* Tablets */
-/* @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
+    .col {
+        flex: 0 0 33%;
+    }
 
-} */
+    .burger-nav{
+        display: none;
+    } 
+    
+    nav {
+        padding-top: 15px;
+        margin-right: 20px;
+        float: right;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 20px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin-left: 25px;
+        padding: 4px;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+        text-shadow: 2px 2px 2px #0000008f;
+    }
+
+    .content {
+        width: 76%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        float: right;
+    }
+
+    .row {
+        width: 20%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:center;
+        float: left;
+        margin: 10px 0 0 10px;
+        padding: 20px;
+        border-style: solid;
+        border-width: 0 4px 0 0;
+        border-color: var(--light);
+    }
+}
