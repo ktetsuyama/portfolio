@@ -6,6 +6,7 @@
 
 body {
     background-color: #0f0f0f;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -18,13 +19,13 @@ body {
     color: #085964;
 }
 
-.header h1 {
+h1 {
     display: flex;
     font-size: 48px;
     animation: slide 2s;
 }
 
-.header nav {
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +33,11 @@ body {
     font-size: 20px;
 }
 
-.header nav ul {
+nav ul {
     list-style-type: none;
 }
 
-.header nav ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
     padding: 4px;
