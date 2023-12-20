@@ -57,7 +57,6 @@ main {
     height: auto;
 }
 .header nav ul li {
-    float: none;
     text-align: center;
     width: 100%;
     margin: 0;
@@ -78,6 +77,7 @@ h1 {
 }
 
 .headshot {
+    display: inline-block;
     width: 160px;
     padding: 10px;
     margin: 20px;
@@ -98,7 +98,14 @@ p {
     line-height: 140%;
 }
 
-.row{
+.row {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.row2 {
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -106,6 +113,10 @@ p {
 }
 
 .col {
+    flex: 0 0 50%;
+}
+
+.col2 {
     flex: 0 0 50%;
 }
 
@@ -227,18 +238,55 @@ p {
 
 /* Tablets */
 @media screen and (min-width: 768px){
-    .col {
-        flex: 0 0 33%;
+    .row {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .row1 {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
     }
 
-    .burger-nav{
-        display: none;
-    } 
+    .row2 {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .row3 {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
     
+    .col {
+        flex: 0 0 50%;
+    }
+
+    .col1 {
+        flex: 1 0 50%;
+    }
+    
+    .col2 {
+        flex: 0 0 50%;
+    }
+
+    .col3 {
+        flex: 0 0 50%;
+    }
+
+      
     .header nav {
-        padding-top: 15px;
+        display: inline-flex;
+        justify-content: end;
         margin-right: 20px;
-        float: right;
         font-family: Helvetica, Arial, sans-serif;
         font-size: 20px;
     }
@@ -246,17 +294,30 @@ p {
     .header nav ul {
         overflow: visible;
         list-style-type: none;
+        background: none;
     }
     
     .header nav ul li {
         display: inline-block;
-        width: 133%;
-        margin-left: 25px;
-        padding: 4px;
+        width: 15%;
+        padding: 10px 75px 0 0;
         text-decoration: underline;
         text-underline-offset: 7px;
         text-shadow: 2px 2px 2px #0000008f;
+        border-bottom: 0px;
     }
+
+    .header nav ul li a {
+        color: #fff;
+        padding: 10px;
+        border-bottom: 0px;
+        display: block;
+        margin: 0;
+    }
+
+    .burger-nav{
+        display: none;
+    } 
 
     .content {
         width: 76%;
@@ -272,11 +333,19 @@ p {
         flex-direction: row;
         flex-wrap: wrap;
         align-items:center;
-        float: left;
         margin: 10px 0 0 10px;
         padding: 20px;
         border-style: solid;
         border-width: 0 4px 0 0;
         border-color: var(--light);
     }
+
+    .examples {
+        flex: 4;
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+      }
 }
