@@ -19,7 +19,7 @@ I am a budding full stack developer that wishes to show off the work that I have
 
 ## Solution
 
- I created a portfolio application that is coded well on its own, but also showcases a selection of porjects that I have worked. It can be easily updated in the future.
+ I created a portfolio application that is coded well on its own, but also showcases a selection of projects that I have worked. It can be easily updated in the future.
 
 ![Screenshot of portfolio webpage](assets/images/screenshot.jpg)
 
@@ -27,6 +27,7 @@ I am a budding full stack developer that wishes to show off the work that I have
 
 ## Credits
 
+I collaborated with George Schultz, Aster Oliva, and Ailleen Nguyen to troubleshoot any bugs that I had during development of this application.
 
 Tutorials used:
 
