@@ -27,7 +27,7 @@ I am a budding full stack developer that wishes to show off the work that I have
 
 ## Credits
 
-I collaborated with George Schultz, Aster Oliva, and Ailleen Nguyen to troubleshoot any bugs that I had during development of this application.
+I collaborated with George Schultz, Aster Oliva, Ailleen Nguyen, and Nick Gambino to troubleshoot any bugs that I had during development of this application.
 
 Tutorials used:
 
