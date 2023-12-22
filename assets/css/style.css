@@ -107,7 +107,7 @@ p {
 }
 
 .main-row{
-    display: inline-block;
+    /* display: inline-block; */
     width: 100%;
 }
 
@@ -135,15 +135,8 @@ p {
     align-items: center;
 }
 
-.row {
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    }
-
 .main-text { 
     justify-content: center;
-    width:100%;
     margin-bottom: 15px;
     margin-top: 20px;
     padding: 30px;
@@ -165,12 +158,11 @@ p {
 
 .examples {
     display: flex;
-    flex: 4;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    flex-direction: row;
+    outline: solid rgb(94, 250, 4) 2px;
   }
   
 .card {
@@ -178,7 +170,7 @@ p {
     border-width: 1px;
     padding: 10px;
     margin: 20px;
-    flex: 0 0 240px;
+    flex: 1 0 100%;
     border-radius: 10px 0px 10px 50px;
 }
   
@@ -189,7 +181,6 @@ p {
   
 
 .card img {
-    width: 100%;    
     border-radius: 10px 0px 10px 50px;
 }
 
@@ -237,11 +228,7 @@ p {
 /* Tablets */
 @media screen and (min-width: 768px){
     .row {
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-        outline: solid green 2px;
+        outline: solid orange 2px;
         margin: 3px;
     }
        
@@ -249,7 +236,7 @@ p {
         display: inline-flex;
         position:absolute;
         top: 125px;
-        right: -17%;
+        right: 0%;
         justify-content: end;
         margin-right: 20px;
         font-family: Helvetica, Arial, sans-serif;
@@ -289,8 +276,14 @@ p {
         width: 100%;
     }
 
+    .main-row-aside {
+        height: 100%;
+        width: 250px;
+        outline: solid purple 2px;
+        flex-grow: 1;
+    }
+
     .main-text { 
-        width:100%;
         margin-bottom: 15px;
         margin-top: 0px;
         padding: 5%;
@@ -300,7 +293,6 @@ p {
     }
 
     .title-words {
-        width: 100%;
         padding: 5%;
         font-family: Helvetica, Arial, sans-serif;
         background-color: var(--light);
@@ -308,12 +300,10 @@ p {
     }
 
     .examples {
-        flex: 4;
         padding: 50px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: flex-start;
+        flex-direction: row;
       }
 
       .card {
@@ -321,7 +311,11 @@ p {
         border-width: 1px;
         padding: 10px;
         margin: 20px;
-        flex: 0 0 240px;
+        flex: 1 0 50%;
+        border-radius: 10px 0px 10px 50px;
+    }
+
+    .card img {
         border-radius: 10px 0px 10px 50px;
     }
 }
