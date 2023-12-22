@@ -20,11 +20,22 @@ body {
 }
 
 .header {
-    padding: 25px;
     margin: 0px 0px 10px 0px;
     font-family: Helvetica, Arial, sans-serif;
     background-color: var(--dark);
     color: var(--light);
+}
+
+.name-pic{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.nav-spacer{
+    height: 15px;
+    width: 100%;
+    background-color: var(--dark); 
 }
 
 /* Burger Navigation*/
@@ -71,7 +82,8 @@ body {
 
 h1 {
     display: flex;
-    font-size: 48px;
+    font-size: 2.5em;
+    line-height: 1em;
     animation: slide 2s;
 }
 
@@ -107,13 +119,11 @@ p {
 }
 
 .main-row{
-    /* display: inline-block; */
     width: 100%;
 }
 
 .main-row-aside {
     height: 100%;
-    outline: solid purple 2px;
     flex-grow: 1;
 }
 
@@ -162,7 +172,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    outline: solid rgb(94, 250, 4) 2px;
   }
   
 .card {
@@ -173,6 +182,14 @@ p {
     flex: 1 0 100%;
     border-radius: 10px 0px 10px 50px;
 }
+
+.card-link{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
   
 .card header {
     padding: 20px;
@@ -182,10 +199,12 @@ p {
 
 .card img {
     border-radius: 10px 0px 10px 50px;
+    width: 100%;
 }
 
 .card:hover {
-    color: red;
+    background-color: var(--dark);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -228,8 +247,7 @@ p {
 /* Tablets */
 @media screen and (min-width: 768px){
     .row {
-        outline: solid orange 2px;
-        margin: 3px;
+        width: 80%;
     }
        
     .header nav {
@@ -277,10 +295,8 @@ p {
     }
 
     .main-row-aside {
-        height: 100%;
-        width: 250px;
-        outline: solid purple 2px;
-        flex-grow: 1;
+        width: 20%;
+        margin-right: 1%;
     }
 
     .main-text { 
@@ -304,14 +320,14 @@ p {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: center;
       }
 
       .card {
         border-style: solid;
         border-width: 1px;
         padding: 10px;
-        margin: 20px;
-        flex: 1 0 50%;
+        flex: 0 1 44%;
         border-radius: 10px 0px 10px 50px;
     }
 
