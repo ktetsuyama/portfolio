@@ -23,9 +23,9 @@ I am a budding full stack developer that wishes to show off the work that I have
 
 ![Screenshot of portfolio webpage on mobile](assets/images/mobile_screenshot.png)
 
-![Screenshot of portfolio webpage on desktop](assets/images/desktop%20screenshot.png)
+![Screenshot of portfolio webpage on desktop](assets/images/desktop_screenshot.png)
 
-[Link to the deployed application]()
+[Link to the deployed application](https://ktetsuyama.github.io/portfolio/)
 
 ## Credits
 
