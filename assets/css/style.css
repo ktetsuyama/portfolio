@@ -64,13 +64,13 @@ body {
 .header nav ul.open {
     height: auto;
 }
-.header nav ul li {
+.header nav ul.open li {
     text-align: center;
     width: 100%;
     margin: 0;
 }
 
-.header nav ul li a {
+.header nav ul.open li a {
     color: #fff;
     padding: 10px;
     border-bottom: 1px solid #404040;
